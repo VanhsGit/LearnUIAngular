@@ -1,0 +1,11 @@
+<div class="main-container">
+    <app-dt-sidebar-item></app-dt-sidebar-item>
+    <div class="content-container">
+       @for (item of CatItems; track $index) {
+        <div>
+            <img [src]="Cat">
+            <p>{{item.name}}</p>
+        </div>
+       }
+    </div>
+</div>

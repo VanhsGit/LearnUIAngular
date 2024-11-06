@@ -1,19 +1,24 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable, INJECTOR, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
     providedIn:'root'
 }) export class DeviceDetectorService {
     static readonly mobileDeviceSize = 768;
-    // screenWidth: number;
-    constructor(){
-        //this.screenWidth = window.innerWidth;
+    screenWidth: number;
+    constructor(@Inject(PLATFORM_ID) private platformID: object){
+        if(isPlatformBrowser(platformID)){
+            this.screenWidth = window.innerWidth;
+        } else {
+            this.screenWidth = DeviceDetectorService.mobileDeviceSize;
+        }
     }
 
     public isMobile() : boolean{
-        return true;// (this.screenWidth < DeviceDetectorService.mobileDeviceSize);
+        return this.screenWidth < DeviceDetectorService.mobileDeviceSize;
     }
 
     public isDesktop() : boolean{
-        return true;// (this.screenWidth >= DeviceDetectorService.mobileDeviceSize);
+        return this.screenWidth >= DeviceDetectorService.mobileDeviceSize;
     }
 }

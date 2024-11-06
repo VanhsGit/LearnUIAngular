@@ -8,7 +8,6 @@ import { MbSidebarScreenComponent } from "./common/mb-sidebar-item/mb-sidebar-sc
 import { MbProductScreenComponent } from "./components/mb-product-screen/mb-product-screen.component";
 import { MbOrderproductScreenComponent } from "./components/mb-orderproduct-screen/mb-orderproduct-screen.component";
 import { MbNavbarScreenComponent } from "./common/mb-navbar-item/mb-navbar-screen.component";
-import { MbContentScreenComponent } from "./components/mb-content-screen/mb-content-screen.component";
 import { MbCartScreenComponent } from "./components/mb-cart-screen/mb-cart-screen.component";
 import { MbAdminScreenComponent } from "./components/mb-admin-screen/mb-admin-screen.component";
 import { NgModule } from "@angular/core";
@@ -56,11 +55,6 @@ const routes: Routes = [
             {
                 path: 'navbar',
                 component: MbNavbarScreenComponent,
-                canActivate: [authchildGuard]
-            },
-            {
-                path: 'content',
-                component: MbContentScreenComponent,
                 canActivate: [authchildGuard]
             },
             {

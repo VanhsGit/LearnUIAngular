@@ -1,0 +1,10 @@
+.main-container {
+    display: flex;
+    height: 97vh;
+    overflow: hidden;
+
+    .content-container {
+        flex: 3;
+    }
+
+}
