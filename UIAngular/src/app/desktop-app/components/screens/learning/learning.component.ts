@@ -14,8 +14,15 @@ export class LearningComponent {
     return this.CatItems[this.RandomIndex];
   }
 
+  AlertData(){
+    alert(this.CatItems);
+  }
+
   getRandomIndex(min: number, max: number):number {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  get RandomData(){
+    return this.CatItems[this.getRandomIndex(0, this.CatItems.length)];
+  }
 }
