@@ -1,20 +1,17 @@
 <div class="main-container">
     <app-dt-sidebar-item></app-dt-sidebar-item>
     <div class="content-container">
-       <div>
-            @for (item of CatItems; track $index) {
-                <div class="item">
-                    <img [src]="item.url">
-                    <p>{{item.name}}</p>
-                </div>
-            }
-       </div>
+            <div>
+                @for (item of CatItems; track $index) {
+                    <app-learn-user-item [url]="item.url" [name]="item.name"></app-learn-user-item>
+                }
+            </div>
 
-       <!-- <div class="getrandom">
-        <div class="item">
-            <img [src]="RandomData.url">
-            <p>{{RandomData.name}}</p>
-        </div>
-       </div> -->
+            <div class="getrandom" (click)="ResetData()">
+                <div class="item">
+                    <img [src]="gurl()">
+                    <p>{{GetUser().name}}</p>
+                </div>
+            </div>
     </div>
 </div>

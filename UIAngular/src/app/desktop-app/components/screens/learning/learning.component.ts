@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal, computed } from '@angular/core';
 import { Cats } from '../../../../Shared/Models/cats';
 
 @Component({
@@ -8,7 +8,10 @@ import { Cats } from '../../../../Shared/Models/cats';
 })
 export class LearningComponent {
   CatItems = Cats;
-  RandomIndex = this.getRandomIndex(0, this.CatItems.length)
+  RandomIndex = Math.floor(Math.random() * Cats.length);
+  GetUser = signal(Cats[this.RandomIndex]);
+ 
+  gurl = computed(() => this.GetUser().url);
 
   get Cat(){
     return this.CatItems[this.RandomIndex];
@@ -18,11 +21,8 @@ export class LearningComponent {
     alert(this.CatItems);
   }
 
-  getRandomIndex(min: number, max: number):number {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  get RandomData(){
-    return this.CatItems[this.getRandomIndex(0, this.CatItems.length)];
+  ResetData() {
+    this.RandomIndex = Math.floor(Math.random() * Cats.length);
+    this.GetUser.set(Cats[this.RandomIndex]);
   }
 }

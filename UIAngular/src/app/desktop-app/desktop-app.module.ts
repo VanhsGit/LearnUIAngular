@@ -12,10 +12,11 @@ import { DtSidebarItemComponent } from "./components/common/dt-sidebar-item/dt-s
 import { DtNavbarItemComponent } from "./components/common/dt-navbar-item/dt-navbar-screen.component";
 import { DtUserScreenComponent } from "./components/screens/dt-user-screen/dt-user-screen.component";
 import { LearningComponent } from "./components/screens/learning/learning.component";
+import { LearnUserItemComponent } from "./components/screens/learning/learn-user-item/learn-user-item.component";
 
 const Components = [DtAdminScreenComponent, DtCartScreenComponent,
     DtOrderproductScreenComponent, DtProductItemComponent, DtStoreScreenComponent,
-    DtTableScreenComponent, DtUserItemComponent, DtUserScreenComponent, LearningComponent
+    DtTableScreenComponent, DtUserItemComponent, DtUserScreenComponent, LearningComponent, LearnUserItemComponent
 ]
 
 const Items = [DtSidebarItemComponent, DtNavbarItemComponent, DtUserItemComponent, DtProductItemComponent]
