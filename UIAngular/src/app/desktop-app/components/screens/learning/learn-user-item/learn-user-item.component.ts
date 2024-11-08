@@ -6,6 +6,8 @@ import { Component, Input, input } from '@angular/core';
   styleUrl: './learn-user-item.component.scss'
 })
 export class LearnUserItemComponent {
-    @Input({required: true}) url!: string;
-    @Input({required: true }) name!: string;
+    // @Input({required: true}) url!: string;
+    // @Input({required: true }) name!: string;
+    url = input.required<string>();
+    name = input.required<string>();
 }
