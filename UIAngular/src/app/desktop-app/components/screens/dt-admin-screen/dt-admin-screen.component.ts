@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-dt-admin-screen',
   templateUrl: './dt-admin-screen.component.html',
-  styleUrl: './dt-admin-screen.component.scss'
+  styleUrl: './dt-admin-screen.component.scss',
+  standalone: false
 })
 export class DtAdminScreenComponent {
 

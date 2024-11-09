@@ -3,7 +3,7 @@
     <div class="content-container">
             <div>
                 @for (item of CatItems; track $index) {
-                    <app-learn-user-item [url]="item.url" [name]="item.name"></app-learn-user-item>
+                    <app-learn-user-item (gid)="changeId($event)" [id]="item.id" [url]="item.url" [name]="item.name"></app-learn-user-item>
                 }
             </div>
 
@@ -12,6 +12,9 @@
                     <img [src]="gurl()">
                     <p>{{GetUser().name}}</p>
                 </div>
+            </div>
+            <div>
+                <app-displaycontent [name]="GetUserID ? GetUserID.id : 0"></app-displaycontent>
             </div>
     </div>
 </div>

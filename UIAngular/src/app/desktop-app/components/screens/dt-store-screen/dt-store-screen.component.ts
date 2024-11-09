@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-dt-store-screen',
   templateUrl: './dt-store-screen.component.html',
-  styleUrl: './dt-store-screen.component.scss'
+  styleUrl: './dt-store-screen.component.scss',
+  standalone: false
 })
 export class DtStoreScreenComponent {
 

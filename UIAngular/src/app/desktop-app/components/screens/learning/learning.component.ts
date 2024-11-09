@@ -1,10 +1,11 @@
-import { Component, signal, computed } from '@angular/core';
+import { Component, signal, computed, input } from '@angular/core';
 import { Cats } from '../../../../Shared/Models/cats';
 
 @Component({
   selector: 'app-learning',
   templateUrl: './learning.component.html',
-  styleUrl: './learning.component.scss'
+  styleUrl: './learning.component.scss',
+  standalone: false
 })
 export class LearningComponent {
   CatItems = Cats;
@@ -13,12 +14,18 @@ export class LearningComponent {
  
   gurl = computed(() => this.GetUser().url);
 
-  get Cat(){
-    return this.CatItems[this.RandomIndex];
+  Userid = 1;
+
+  get GetUserID(){
+    return this.CatItems.find((user)=>user.id === this.Userid)!;
   }
 
-  AlertData(){
-    alert(this.CatItems);
+  changeId(id: number){
+    this.Userid = id;
+  }
+
+  get Cat(){
+    return this.CatItems[this.RandomIndex];
   }
 
   ResetData() {

@@ -4,7 +4,8 @@ import { NavBarItems } from '../../../../Shared/Models/navbar';
 @Component({
   selector: 'app-dt-sidebar-item',
   templateUrl: './dt-sidebar-screen.component.html',
-  styleUrl: './dt-sidebar-screen.component.scss'
+  styleUrl: './dt-sidebar-screen.component.scss',
+  standalone: false
 })
 export class DtSidebarItemComponent {
   navItems = NavBarItems;

@@ -13,10 +13,11 @@ import { DtNavbarItemComponent } from "./components/common/dt-navbar-item/dt-nav
 import { DtUserScreenComponent } from "./components/screens/dt-user-screen/dt-user-screen.component";
 import { LearningComponent } from "./components/screens/learning/learning.component";
 import { LearnUserItemComponent } from "./components/screens/learning/learn-user-item/learn-user-item.component";
+import { DisplaycontentComponent } from "./components/screens/learning/displaycontent/displaycontent.component";
 
 const Components = [DtAdminScreenComponent, DtCartScreenComponent,
     DtOrderproductScreenComponent, DtProductItemComponent, DtStoreScreenComponent,
-    DtTableScreenComponent, DtUserItemComponent, DtUserScreenComponent, LearningComponent, LearnUserItemComponent
+    DtTableScreenComponent, DtUserItemComponent, DtUserScreenComponent, LearningComponent, LearnUserItemComponent, DisplaycontentComponent
 ]
 
 const Items = [DtSidebarItemComponent, DtNavbarItemComponent, DtUserItemComponent, DtProductItemComponent]
@@ -25,6 +26,7 @@ const Items = [DtSidebarItemComponent, DtNavbarItemComponent, DtUserItemComponen
     imports: [DesktopRoutingModule],
     declarations: [
         Components,
+        LearnUserItemComponent,
         Items
     ]
 })export class DesktopModule{
