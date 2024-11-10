@@ -14,7 +14,7 @@ export class LearningComponent {
  
   gurl = computed(() => this.GetUser().url);
 
-  Userid = 1;
+  Userid?: number; 
 
   get GetUserID(){
     return this.CatItems.find((user)=>user.id === this.Userid)!;

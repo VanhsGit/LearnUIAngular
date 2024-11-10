@@ -1,14 +1,13 @@
-
 .item {
     display: flex;
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     height: 40px;
-    margin-top: 20px;
     align-items: center;
-    margin-left: 20px;
+    background-color: #fff;
     cursor: pointer;
+    margin: 12px 0;
     p{
         margin-left: 12px;
     }
@@ -17,4 +16,4 @@
         height: 36px;
         border-radius: 50%;
     }
-}
+}    
