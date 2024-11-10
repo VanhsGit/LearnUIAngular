@@ -1,0 +1,15 @@
+.jobs-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 100%;
+    height: 100%;
+
+
+    app-job{
+        background-color: #f5f5fb;
+    }
+
+    app-task{
+        background-color: #fff;
+    }
+}
