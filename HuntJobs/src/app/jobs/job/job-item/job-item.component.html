@@ -1,1 +1,13 @@
-<p>job-item works!</p>
+<section class="job-item-container">
+    <img [src]="jobDetail().url" alt="img">
+    <div class="job-item-info">
+        <p style="font-size: 1.6vw;">{{jobDetail().name}}</p>
+        <p style="font-weight: 100; font-size: 1.1vw; color: #5c6089;">{{jobDetail().position}}</p>
+        <p style="font-weight: 100; font-size: 1vw; color: #5c6089;"><i style="color: #5c6089;" class='bx bxs-map-pin'></i> {{jobDetail().Address}}</p>
+    </div>
+    <div class="salary">
+        <p style="color: #8a8a8a;">Team</p>
+        <p style="margin-bottom: 8px; color: #606060;">{{jobDetail().Team}}</p>
+        <p >${{jobDetail().Salary}}k / Year</p>
+    </div>
+</section>

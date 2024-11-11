@@ -6,4 +6,11 @@
             <i class='bx bx-search-alt-2'></i>
         </div>
     </div>
+    <p style="margin: 2vw 10%;">Jobs for you</p>
+    <section class="detail-job-container">
+        @for (job of jobs; track job.id) {
+            <app-job-item [jobDetail]="job"></app-job-item>
+        }
+    </section>
+
 </div>

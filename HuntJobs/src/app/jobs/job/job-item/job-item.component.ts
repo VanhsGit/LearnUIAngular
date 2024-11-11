@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Job } from '../../../Shared/Models/Job.model';
 
 @Component({
   selector: 'app-job-item',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './job-item.component.scss'
 })
 export class JobItemComponent {
-
+  jobDetail = input.required<Job>();
+  
 }

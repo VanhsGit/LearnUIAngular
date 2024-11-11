@@ -1,7 +1,25 @@
 .job-container {
-    margin-top: 3vw;
-    display: flex;
-    flex-direction: column;
+    height: calc(100% - 2vw);
+    .detail-job-container {
+        overflow: auto;
+        height: 80%;
+    }
+    .detail-job-container::-webkit-scrollbar {
+        width: 1px; 
+        height: 5px; 
+    }
+    .detail-job-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .detail-job-container::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 10px; 
+    }
+    .detail-job-container::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+
     .searchbar {
         margin: auto;
         width: 80%;
@@ -11,6 +29,7 @@
         border-radius: 3vw;
         justify-content: space-between;
         overflow: hidden;
+        margin-top: 2vw;
         input {
             width: 80%;
             height: 3vw;

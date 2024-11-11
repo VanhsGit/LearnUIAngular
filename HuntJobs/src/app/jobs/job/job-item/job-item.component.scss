@@ -1,0 +1,27 @@
+.job-item-container {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1.5fr;
+    width: 90%;
+    border: 1px solid #f0f0f0;
+    margin: auto;
+    padding: 1.2vw 0.8vw;
+    margin-bottom: 12px;
+    background-color: #fff;
+    border-radius: 12px;
+    img {
+        width: 5vw;
+        border-radius: 12px;
+    }
+
+    .job-item-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .salary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
