@@ -1,6 +1,6 @@
 <div class="jobs-container">
-    <app-job></app-job>
-    <app-task>
-        
-    </app-task>
+    <app-job (idJob)="idSelected()"></app-job>
+    @if (gIdSelected) {
+        <app-djobs [djobsDetail]="gIdSelected"></app-djobs>
+    }
 </div>
