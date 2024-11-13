@@ -41,5 +41,22 @@ import { JobItem } from "../../../Shared/Models/JobItem.model";
             Benefit: 'High salary, annual performance bonuses, healthcare coverage, free access to YouTube premium.'
         }
     ];
+
+
+    GetAll(){
+        return this.JobDetails;
+    }
+
+    GetSingle(id?: number){
+        return this.JobDetails.find(x => x.id === id)!;
+    }
+
+    Add(item: JobItem){
+        this.JobDetails.push(item);
+    }
+
+    Remove(id: number){
+        this.JobDetails.filter(x => x.id !== id);
+    }
     
 }

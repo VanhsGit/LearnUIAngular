@@ -53,7 +53,7 @@ import { Job } from "../../Shared/Models/Job.model";
     }];
 
     GetSingle(id: number) {
-        return this.Jobs.filter(x => x.id === id);
+        return this.Jobs.find(x => x.id === id);
     }
 
     GetAll(){
