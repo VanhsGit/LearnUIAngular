@@ -4,4 +4,6 @@ export interface JobItem {
     Description: string;
     Required: string;
     Benefit: string;
+    url: string;
+    position: string;
 }
