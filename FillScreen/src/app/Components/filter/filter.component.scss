@@ -1,0 +1,37 @@
+ul li {
+    list-style-type: none;
+    a{
+        text-decoration: none;
+        color: #898989;
+    }
+}
+#category{    
+    border-bottom: 1px solid #ececec;
+    p {
+        font-size: 1.2vw;
+        font-weight: 700;
+    }
+    ul {
+        padding-left: 1vw;
+        li {
+            padding: 4px 0;
+        }
+    }
+}
+
+.active-category {
+    color: #2418d3 !important;
+}
+
+section {
+    margin-right: 0.4vw;
+    padding: 1vw;
+}
+
+#filter-container{
+    p {
+        font-size: 1.2vw;
+        font-weight: 500;
+        margin-bottom: 0.5vw;
+    }
+}

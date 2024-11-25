@@ -6,8 +6,6 @@ import { JobItemService } from './job/job-item/job-item.service';
 
 @Component({
   selector: 'app-jobs',
-  standalone: true,
-  imports: [JobComponent, DJobsComponent],
   templateUrl: './jobs.component.html',
   styleUrl: './jobs.component.scss'
 })
