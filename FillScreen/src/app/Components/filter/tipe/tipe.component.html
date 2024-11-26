@@ -3,8 +3,9 @@
     <span class="material-icons md-dark">keyboard_arrow_down</span>
 </div>
 
-<section class="example-section">
-    <mat-checkbox [(ngModel)]="checked">Checked</mat-checkbox>
-    <mat-checkbox [(ngModel)]="indeterminate">Convert</mat-checkbox>
+<section class="example-section" style="display: flex; flex-direction: column;">
+    @for (item of tipes; track $index) {
+        <mat-checkbox>{{item}}</mat-checkbox>
+    }
 </section>
     
