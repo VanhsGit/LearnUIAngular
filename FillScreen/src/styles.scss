@@ -21,3 +21,18 @@ p, a {
 // font-family: "Josefin Sans", sans-serif;
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-body-large p, .mat-typography .mat-body-large p, .mat-typography p {
+  margin: 0;
+}
+
+button{
+  display: inline-flex;
+  justify-content: center;
+  width: 100px;
+  align-items: center;
+  span {
+    width: 100%;
+  }
+}

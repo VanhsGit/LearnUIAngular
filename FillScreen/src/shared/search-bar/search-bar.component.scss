@@ -1,0 +1,30 @@
+
+$background-color: #f8f9fd;
+
+.search-bar-container {
+    display: inline-flex;
+    padding: 6px 12px;
+    align-items: center;
+    background-color: $background-color;
+    border-radius: 12px;
+    color: #cecece;
+
+    span {
+        font-size: 2vw;
+        margin: 0 4px;
+        color: #868688;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        width: 16vw;
+        background-color: $background-color;
+    }
+
+    .icon-html {
+        background-color: white;
+        padding: 0 6px;
+        border-radius: 4px;
+    }
+}

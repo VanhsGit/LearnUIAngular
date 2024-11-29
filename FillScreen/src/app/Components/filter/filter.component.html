@@ -1,4 +1,4 @@
-<section id="category">
+<section class="section" id="category">
     <p>Category</p>
     <ul>
         <li><a class="active-category" href="#">T-Shirt</a></li>
@@ -10,14 +10,16 @@
     </ul>
 </section>
 
-<section id="filter-container">
+<section class="section" id="filter-container">
     <ng-content/>
     <ng-content select="colour"/>
     <ng-content select="size"/>
     <ng-content select="price"/>
 </section>
 
-<section>
-    <button btnApply></button>
-    <p btnApply>Delete</p>
+<section class="section">
+    <button btn>
+        <p>Apply</p>
+        <span ngProjectAs="icon">></span>
+    </button>
 </section>
