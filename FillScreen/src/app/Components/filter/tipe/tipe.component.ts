@@ -13,22 +13,22 @@ const materialItems = [MatRadioModule, MatCardModule, MatCheckboxModule];
   templateUrl: './tipe.component.html',
   styleUrl: './tipe.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush ,
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
   host: {
     class: 'tipe-container',
-    '(click)': 'OnClickSomething()'
+    // '(click)': 'OnClickSomething()'
   }
 })
 export class TipeComponent {
   tipes = ["Basic", "Pattern", "Hoodie", "Zipper", "Oversize"];
-  readonly checked = model(false);
-  readonly indeterminate = model(false);
-  @HostBinding("class") className = 'test';
+  // readonly checked = model(false);
+  // readonly indeterminate = model(false);
+  // @HostBinding("class") className = 'test';
   // @HostListener('click') OnClick(){
   //   alert("On Click host Listener");
   // }
 
   OnClickSomething(){
-    alert('Clicked !');
+    console.log('Clicked !');
   }
 }
