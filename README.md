@@ -1,2 +1,0 @@
-# LearnUIAngular
-LearnUIAngular
