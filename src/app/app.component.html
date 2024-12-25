@@ -1,5 +1,4 @@
 
-
 <style>
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
@@ -58,7 +57,6 @@
     width: 100%;
     min-height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -316,136 +314,9 @@
       </div>
     </div>
   </div>
-
-  <section class="Authen">
-    <amplify-authenticator [formFields]="">
-      <ng-template amplifySlot="sign-in-header">
-        <h3
-          class="amplify-heading"
-          style="padding: var(--amplify-space-xl) 0 0 var(--amplify-space-xl)"
-        >
-          Sign in to your account
-        </h3>
-      </ng-template>
-    
-      <ng-template amplifySlot="sign-in-footer">
-        <div style="text-align: center">
-          <button
-            (click)="authenticator.toForgotPassword()"
-            class="amplify-button amplify-field-group__control"
-            data-fullwidth="false"
-            data-size="small"
-            data-variation="link"
-            type="button"
-            style="font-weight: normal"
-          >
-            Reset Password
-          </button>
-        </div>
-      </ng-template>
-    
-      <ng-template amplifySlot="sign-up-header">
-        <h3
-          class="amplify-heading"
-          style="padding: var(--amplify-space-xl) 0 0 var(--amplify-space-xl)"
-        >
-          Create a new account
-        </h3>
-      </ng-template>
-    
-      <ng-template amplifySlot="sign-up-footer">
-        <div style="text-align: center">
-          <button
-            (click)="authenticator.toSignIn()"
-            class="amplify-button amplify-field-group__control"
-            data-fullwidth="false"
-            data-size="small"
-            data-variation="link"
-            type="button"
-            style="font-weight: normal"
-          >
-            Back to Sign In
-          </button>
-        </div>
-      </ng-template>
-
-      <ng-template amplifySlot="confirm-sign-up-header">
-        <h3
-          class="amplify-heading"
-          style="padding: var(--amplify-space-xl) 0 0 var(--amplify-space-xl)"
-        >
-          Enter Information:
-        </h3>
-      </ng-template>
-    
-      <ng-template amplifySlot="confirm-sign-up-footer">
-        <div>Footer Information</div>
-      </ng-template>
-    
-      <ng-template amplifySlot="setup-totp-header">
-        <h3
-          class="amplify-heading"
-          style="padding: var(--amplify-space-xl) 0 0 var(--amplify-space-xl)"
-        >
-          Enter Information:
-        </h3>
-      </ng-template>
-    
-      <ng-template amplifySlot="setup-totp-footer">
-        <div>Footer Information</div>
-      </ng-template>
-    
-      <ng-template amplifySlot="confirm-sign-in-header">
-        <h3
-          class="amplify-heading"
-          style="padding: var(--amplify-space-xl) 0 0 var(--amplify-space-xl)"
-        >
-          Enter Information:
-        </h3>
-      </ng-template>
-    
-      <ng-template amplifySlot="confirm-sign-in-footer">
-        <div>Footer Information</div>
-      </ng-template>
-    
-      <ng-template amplifySlot="forgot-password-header">
-        <h3
-          class="amplify-heading"
-          style="padding: var(--amplify-space-xl) 0 0 var(--amplify-space-xl)"
-        >
-          Enter Information:
-        </h3>
-      </ng-template>
-    
-      <ng-template amplifySlot="forgot-password-footer">
-        <div>Footer Information</div>
-      </ng-template>
-    
-      <ng-template amplifySlot="confirm-reset-password-header">
-        <h3
-          class="amplify-heading"
-          style="padding: var(--amplify-space-xl) 0 0 var(--amplify-space-xl)"
-        >
-          Enter Information:
-        </h3>
-      </ng-template>
-    
-      <ng-template amplifySlot="confirm-reset-password-footer">
-        <div>Footer Information</div>
-      </ng-template>
-    
-      <ng-template
-        amplifySlot="authenticated"
-        let-user="user"
-        let-signOut="signOut"
-      >
-        <h2>Welcome, {{ user.username }}!</h2>
-        <button (click)="signOut()">Sign Out</button>
-      </ng-template>
-    </amplify-authenticator>
-  </section>
-
-  <section class="uploadImage" style="margin: 60px;">
-    <input type="file" style="padding: 4px; border: 1px solid #000;">
-  </section>
 </main>
+
+
+
+
+<router-outlet />

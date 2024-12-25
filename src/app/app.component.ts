@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
-import { AmplifyAuthenticatorModule, AuthenticatorService } from '@aws-amplify/ui-angular';
-import { Amplify } from 'aws-amplify';
-
-
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [AmplifyAuthenticatorModule],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ConnectServiceAmplify';
-    
-  constructor(public authenticator: AuthenticatorService) {
- 
-  }
+  title = 'Amplify';
 }

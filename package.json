@@ -1,5 +1,5 @@
 {
-  "name": "connect-service-amplify",
+  "name": "amplify",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ConnectServiceAmplify": "node dist/connect-service-amplify/server/server.mjs"
+    "serve:ssr:Amplify": "node dist/amplify/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -21,8 +21,6 @@
     "@angular/platform-server": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.11",
-    "@aws-amplify/ui-angular": "^5.0.34",
-    "aws-amplify": "^6.11.0",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
