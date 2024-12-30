@@ -1,0 +1,8 @@
+.container-frame {
+    display: inline-block; /* Để chiều rộng tự động theo nội dung */
+    width: fit-content;    /* Để chiều rộng khớp với hình ảnh */
+    margin: 0 auto;        /* Tùy chọn: căn giữa nếu cần */
+    border: 1px solid #ccc; /* Tùy chọn: thêm đường viền để dễ nhận biết */
+    padding: 10px;
+    border-radius: 10px;
+}

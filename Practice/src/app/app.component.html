@@ -1,0 +1,25 @@
+<section class="splitform">
+  <app-frame><img style="width: 200px; height: 200px; border-radius: 8px;" src="Avt/Pepe.jpg"/></app-frame>
+</section>
+
+<section class="form-section">
+  <form (ngSubmit)="OnSubmitForm(refInput)" #form>
+    <input name="inputValue" #refInput placeholder="Enter some text">
+    <button>Submit</button>
+  </form>
+</section>
+
+<section class="customDirective">
+  <p npDirective >Custom Diriective</p>
+  <a npDirective navTo="https://www.instagram.com/ph.n.vanh/?hl=en">A Np Directive</a>
+  <a npDirective navTo="https://www.facebook.com/">A Np Directive</a>
+</section>
+
+
+  <section class="pipes">
+    <p>{{ "2002-04-26" | date }}</p>
+    <p>{{ "1.23" | number:'1.1-2' }}</p>
+    <p>{{ "1.2" | number:'1.1-2' }}</p>
+    <p>{{ "1" | number:'1.1-2' }}</p>
+    <p>{{"1234123" | customPipe}}</p>
+  </section>
