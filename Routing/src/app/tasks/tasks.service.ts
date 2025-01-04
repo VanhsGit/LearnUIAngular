@@ -1,6 +1,7 @@
-import { Injectable, signal } from '@angular/core';
+import { inject, Injectable, signal } from '@angular/core';
 
 import { type NewTaskData } from './task/task.model';
+import { Router } from '@angular/router';
 
 @Injectable({ providedIn: 'root' })
 export class TasksService {
@@ -31,6 +32,7 @@ export class TasksService {
   ]);
 
   allTasks = this.tasks.asReadonly();
+  private router = inject(Router);
 
   constructor() {
     const tasks = localStorage.getItem('tasks');
